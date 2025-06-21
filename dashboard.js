@@ -7,6 +7,10 @@ let globalDates = [];
 let tickerColors = {};
 let stockPricesCache = {}; // Cache for stock prices to avoid repeated API calls
 
+// Global state
+let allData = [];
+const API_KEY = '6SZERRM8P37D447V'; // Replace with your new Alpha Vantage API key
+
 // Load data when the page loads
 document.addEventListener('DOMContentLoaded', async function() {
     try {
