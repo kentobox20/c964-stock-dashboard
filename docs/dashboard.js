@@ -15,9 +15,9 @@ const API_KEY = '6SZERRM8P37D447V'; // Replace with your new Alpha Vantage API k
 document.addEventListener('DOMContentLoaded', async function() {
     try {
         // Load all JSON files
-        sentimentData = await fetch('docs/data/sentiment_over_time.json').then(r => r.json());
-        mentionsData = await fetch('docs/data/mentions_over_time.json').then(r => r.json());
-        engagementData = await fetch('docs/data/engagement_by_ticker.json').then(r => r.json());
+        sentimentData = await fetch('data/sentiment_over_time.json').then(r => r.json());
+        mentionsData = await fetch('data/mentions_over_time.json').then(r => r.json());
+        engagementData = await fetch('data/engagement_by_ticker.json').then(r => r.json());
 
         // Initialize filters
         initializeFilters();
